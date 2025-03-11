@@ -6,18 +6,16 @@ This game is a remake of the classic Memory game, also known as matching cards g
 The core AI concept behind this game is the use of a Knowledge Base, as taught in Harvard's CS50 AI course ([Week 1](https://cs50.harvard.edu/ai/2020/weeks/1/)). In this game, the AI leverages a Knowledge Base to strategically select cards, increasing its chances of winning.
 The main concept of AI behind this game is the use of Knowledge Base taught in Harward's CS50 course video . In our case AI uses Knowledge Base to choose cards which increases the chances of winning for AI.
 
+## Project Structure  
+
+- **`runner.py`** – This script is used to play the game. It handles game execution and user interaction.  
+- **`knowledge_logic.py`** – Implements the Knowledge Base concept, allowing the AI to make strategic decisions based on learned information.  
+
+## How to Play  
+
+For detailed instructions on how to play the game and how the AI makes its decisions, refer to the **AI_project_summary.docx** file included in this repository. 
+
 <p align="center">
   <img src="https://media.giphy.com/media/xT1XGZjmprZ5i6Q8M0/giphy.gif">
 </p>
 
-### HOW TO PLAY!
-
-1.	Choose your grid size.
-2.	A grid of cards of (nxn) dimension is created
-3.	The user gets the first chance to choose cards.
-4.	If the cards are matched, the user gets another chance to choose cards and the symbols of the matched cards are displayed on the grid. 
-5.	Else the symbols of the chosen cards and a warning stating ‘UNMATCH’ is displayed, and chance is passed to the other player i.e., AI.
-6.	The cards chosen by the players and their respective symbols are added to the explored set.
-7.	Now when AI chooses two cards, it checks if the cards chosen match or else it checks if any of the chosen cards matches with any card in the explored set. 
-8.	If any chosen card matches with any card in the explored set, the card is removed from the explored set and symbols of both the cards are displayed on the grid.
-9.	Steps 4 to 8 are repeated until all matching pair of cards are found and the player with the most matches WINS!
